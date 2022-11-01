@@ -11,4 +11,9 @@ public class HomeController {
         return "index";
     }
 
+    @GetMapping("/reg_form")
+    public String loginPage(Model model){
+        return "reg_form";
+    }
+
 }
