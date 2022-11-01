@@ -28,6 +28,11 @@ public class HomeController {
         return "reg_form";
     }
 
+    @GetMapping("/login")
+    public String loginPage(){
+        return "login_form";
+    }
+
     @PostMapping("/store_emp_reg")
     public String saveEmp(Model model, @ModelAttribute EmpRegistration empRegistration){
         empRegistrationService.saveEmpRegInfo(empRegistration);
